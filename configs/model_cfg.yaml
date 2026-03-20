@@ -1,0 +1,20 @@
+# ADAS Project Configuration - 2025 Standard
+system:
+  device: "cuda"
+  debug_mode: true
+
+camera:
+  source: 0
+  width: 1280
+  height: 720
+  fps: 30
+
+models:
+  obj_model_path: "models/yolo11n.pt"
+  lane_model_path: "models/lane_v1.pt"
+
+thresholds:
+  conf_threshold: 0.45
+  iou_threshold: 0.50
+  departure_pixel_limit: 60
+  ttc_danger_zone: 2.5
